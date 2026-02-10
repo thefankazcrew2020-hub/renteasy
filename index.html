@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RentEasy | Rent Houses Easily</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">Rent<span>Easy</span></div>
+</header>
+
+<section class="hero">
+  <h1>Rent a House Easily</h1>
+  <p>Save time. Find modern houses with live location.</p>
+</section>
+
+<section class="houses">
+  <h2>Available Houses</h2>
+
+  <div class="house-container">
+
+    <div class="house-card" onclick="openHouse({
+      name:'Modern Furnished House',
+      price:'$50 / night',
+      location:'Kigali, Kanombe',
+      images:['images/house1.jpg','images/house1_2.jpg','images/house1_3.jpg'],
+      map:'https://www.google.com/maps?q=Kanombe,Kigali'
+    })">
+      <img src="images/house1.jpg">
+      <h3>Modern Furnished House</h3>
+      <p>Kigali, Kanombe</p>
+      <p class="price">$50 / night</p>
+    </div>
+    
+
+    <div class="house-card" onclick="openHouse({
+      name:'Family Apartment',
+      price:'$40 / night',
+      location:'Kigali, Kicukiro',
+      images:['images/house2.jpg','images/house2_2.jpg'],
+      map:'https://www.google.com/maps?q=Kicukiro,Kigali'
+    })">
+      <img src="images/house2.jpg">
+      <h3>Family Apartment</h3>
+      <p>Kigali, Kicukiro</p>
+      <p class="price">$40 / night</p>
+    </div>
+
+    <div class="house-card" onclick="openHouse({
+      name:'Luxury Villa',
+      price:'$80 / night',
+      location:'Kigali, Rebero',
+      images:['images/house3.jpg','images/house3_2.jpg'],
+      map:'https://www.google.com/maps?q=Rebero,Kigali'
+    })">
+      <img src="images/house3.jpg">
+      <h3>Luxury Villa</h3>
+      <p>Kigali, Rebero</p>
+      <p class="price">$80 / night</p>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  © 2026 RentEasy. All Rights Reserved.
+</footer>
+
+</body>
+</html>
